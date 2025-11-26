@@ -1,0 +1,1174 @@
+2025-11-26 18:24:14,696 - INFO - HTTP Request: GET https://pypi.celonis.cloud/pycelonis/ "HTTP/1.1 200 OK"
+2025-11-26 18:24:15,238 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 401 Unauthorized"
+2025-11-26 18:24:15,675 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:24:15,675 - WARNING - KeyType is not set. Defaulted to 'USER_KEY'.
+2025-11-26 18:24:15,941 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:24:15,942 - INFO - Initial connect successful! PyCelonis Version: 2.14.1
+2025-11-26 18:24:16,219 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud/permissions "HTTP/1.1 200 OK"
+2025-11-26 18:24:16,222 - INFO - `team` permissions: ['MANAGE_AUDIT_LOGS', 'MANAGE_SSO_SETTINGS', 'USE_AUDIT_LOGS_API', 'MANAGE_ADOPTION_VIEWS', 'MANAGE_GENERAL_SETTINGS', 'MANAGE_GROUPS', 'MANAGE_APPLICATIONS', 'MANAGE_ON_PREM_CLIENTS', 'USE_STUDIO_ADOPTION_API', 'MANAGE_LOGIN_HISTORY', 'MANAGE_LICENSE_SETTINGS', 'USE_LOGIN_HISTORY_API', 'USE_USER_GROUP_INFO_API', 'MANAGE_MEMBERS', 'MANAGE_UPLINK_INTEGRATIONS', 'MANAGE_PERMISSIONS', 'MANAGE_ADMIN_NOTIFICATIONS', 'IMPORT_MEMBERS']
+2025-11-26 18:24:16,222 - INFO - `storage-manager` permissions: ['DELETE', 'CREATE', 'GET', 'ADMIN', 'LIST']
+2025-11-26 18:24:16,223 - INFO - `compute-live` permissions: []
+2025-11-26 18:24:16,223 - INFO - `task-mining` permissions: ['EDIT_CLIENT_SETTINGS', 'EDIT_PROJECT_CONNECTION', 'EDIT_USERS', 'CREATE_PROJECT', 'EDIT_DATA_CONFIGURATION']
+2025-11-26 18:24:16,223 - INFO - `action-engine` permissions: ['CREATE_PROJECTS', 'MANAGE_SKILLS', 'ACCESS_ALL_PROJECTS', 'MY_INBOX']
+2025-11-26 18:24:16,225 - INFO - `transformation-hub` permissions: ['ACCESS_TRANSFORMATION_HUB']
+2025-11-26 18:24:16,225 - INFO - `workflows` permissions: ['EDIT_AGENTS', 'VIEW_AGENTS', 'REGISTER_AGENTS', 'MANAGE_PERMISSIONS']
+2025-11-26 18:24:16,225 - INFO - `ml-workbench` permissions: ['DELETE_SCHEDULERS', 'EDIT_SCHEDULERS', 'USE_ALL_SCHEDULERS', 'CREATE_APPS', 'USE_ALL_APPS', 'CREATE_SCHEDULERS', 'MANAGE_ALL_APPS', 'CREATE_WORKSPACES', 'MANAGE_ALL_WORKSPACES', 'MANAGE_SCHEDULERS_PERMISSIONS', 'VIEW_CONFIGURATION']
+2025-11-26 18:24:16,226 - INFO - `process-repository` permissions: ['CREATE_AND_MODIFY_CATEGORIES', 'USE_CATEGORIES', 'DELETE_EXISTING_CATEGORIES', 'MODIFY_EXISTING_CATEGORIES']
+2025-11-26 18:24:16,226 - INFO - `package-manager` permissions: ['EXPORT_ALL', 'ENABLE_AI_ML_ASSETS', 'EDIT_ALL_SPACES', 'MANAGE_PERMISSIONS', 'CREATE_SPACE', 'DELETE_ALL_SPACES']
+2025-11-26 18:24:16,226 - INFO - `transformation-center` permissions: ['MOVE_TO', 'EDIT_OBJECTIVE', 'VIEW_OBJECTIVE', 'CREATE_OBJECTIVE', 'MANAGE_PERMISSIONS', 'CREATE_KPI', 'EXPORT_CONTENT', 'DELETE_OBJECTIVE']
+2025-11-26 18:24:16,227 - INFO - `event-collection` permissions: ['EDIT_ALL_DATA_POOLS_RESTRICTED', 'USE_ALL_DATA_MODELS', 'VIEW_ALL_DATA_POOLS', 'CREATE_DATA_POOL', 'EDIT_ALL_DATA_POOLS']
+2025-11-26 18:24:16,227 - INFO - `user-provisioning` permissions: ['SCIM']
+2025-11-26 18:24:16,493 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/team "HTTP/1.1 200 OK"
+2025-11-26 18:24:16,494 - INFO - Processing file: dummy_data.csv -> Table: dummy_data
+2025-11-26 18:24:17,202 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 18:24:17,474 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:24:17,474 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-26 18:24:17,476 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy_data" (
+  "ID" INT, "Name" VARCHAR(2000), "Value" INT, "Date" VARCHAR(2000)
+);
+2025-11-26 18:24:17,742 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:24:17,744 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-26 18:24:18,025 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/0e0a20dc-e8d1-4667-a396-a4ba90b14f04 "HTTP/1.1 204 No Content"
+2025-11-26 18:24:18,025 - INFO - Successfully deleted task with id '0e0a20dc-e8d1-4667-a396-a4ba90b14f04'
+2025-11-26 18:24:18,291 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:24:18,297 - INFO - Successfully created task of type 'TRANSFORMATION' with id '565ec60b-bc01-47bf-be83-025d5b4f0ade'
+2025-11-26 18:24:18,297 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 18:24:18,579 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:24:18,892 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/execute "HTTP/1.1 204 No Content"
+2025-11-26 18:24:18,892 - INFO - Successfully started execution for job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:24:18,892 - INFO - Wait for execution of job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:24:19,166 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:24:19,534 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:24:19,794 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:24:29,797 - INFO - File has 1000000 records. Splitting into 10 chunks of 100000.
+2025-11-26 18:24:29,797 - INFO - Processing chunk 1/10 (0 to 100000)...
+2025-11-26 18:24:40,408 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:24:40,409 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:24:40,765 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:24:40,767 - INFO - Successfully created data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:40,768 - INFO - Add data frame as file chunks to data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:41,657 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:24:41,657 - INFO - Successfully upserted file chunk to data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:41,990 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:42,502 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:42,504 - INFO - Successfully triggered execution for data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:42,504 - INFO - Wait for execution of data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:42,802 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:43,175 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:43,750 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:44,026 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:44,323 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a41a7264-75e5-4320-810a-04ba56b4c189 "HTTP/1.1 200 OK"
+2025-11-26 18:24:44,324 - INFO - Successfully deleted data push job with id 'a41a7264-75e5-4320-810a-04ba56b4c189'
+2025-11-26 18:24:44,325 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:24:44,325 - INFO - Chunk 1 uploaded successfully.
+2025-11-26 18:24:44,326 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:24:54,326 - INFO - Processing chunk 2/10 (100000 to 200000)...
+2025-11-26 18:24:56,299 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:24:56,299 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:24:56,608 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:24:56,608 - INFO - Successfully created data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:24:56,608 - INFO - Add data frame as file chunks to data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:24:57,819 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:24:57,821 - INFO - Successfully upserted file chunk to data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:24:58,096 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:24:58,490 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:24:58,491 - INFO - Successfully triggered execution for data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:24:58,491 - INFO - Wait for execution of data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:24:58,783 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:24:59,157 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:24:59,733 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:25:00,921 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:25:03,187 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:25:03,460 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:25:03,727 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/bc3e2980-2290-4d3c-894f-492191a5140e "HTTP/1.1 200 OK"
+2025-11-26 18:25:03,733 - INFO - Successfully deleted data push job with id 'bc3e2980-2290-4d3c-894f-492191a5140e'
+2025-11-26 18:25:03,733 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:25:03,733 - INFO - Chunk 2 uploaded successfully.
+2025-11-26 18:25:03,733 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:25:13,735 - INFO - Processing chunk 3/10 (200000 to 300000)...
+2025-11-26 18:25:15,671 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:25:15,671 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:25:15,977 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:25:15,977 - INFO - Successfully created data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:15,977 - INFO - Add data frame as file chunks to data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:18,224 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:25:18,224 - INFO - Successfully upserted file chunk to data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:18,499 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:18,892 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:18,893 - INFO - Successfully triggered execution for data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:18,893 - INFO - Wait for execution of data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:19,158 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:19,525 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:20,106 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:20,371 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:20,658 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/0080879a-91b8-4261-ac37-b702f90459ac "HTTP/1.1 200 OK"
+2025-11-26 18:25:20,659 - INFO - Successfully deleted data push job with id '0080879a-91b8-4261-ac37-b702f90459ac'
+2025-11-26 18:25:20,659 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:25:20,661 - INFO - Chunk 3 uploaded successfully.
+2025-11-26 18:25:20,661 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:25:30,662 - INFO - Processing chunk 4/10 (300000 to 400000)...
+2025-11-26 18:25:32,575 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:25:32,575 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:25:32,904 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:25:32,906 - INFO - Successfully created data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:32,907 - INFO - Add data frame as file chunks to data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:34,183 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:25:34,184 - INFO - Successfully upserted file chunk to data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:34,459 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:34,869 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:34,870 - INFO - Successfully triggered execution for data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:34,870 - INFO - Wait for execution of data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:35,141 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:35,524 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:36,105 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:36,380 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:36,660 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b1c8aaa8-f8dc-481b-a3a1-d8badc654643 "HTTP/1.1 200 OK"
+2025-11-26 18:25:36,662 - INFO - Successfully deleted data push job with id 'b1c8aaa8-f8dc-481b-a3a1-d8badc654643'
+2025-11-26 18:25:36,663 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:25:36,663 - INFO - Chunk 4 uploaded successfully.
+2025-11-26 18:25:36,663 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:25:46,665 - INFO - Processing chunk 5/10 (400000 to 500000)...
+2025-11-26 18:25:49,081 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:25:49,084 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:25:49,419 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:25:49,419 - INFO - Successfully created data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:49,421 - INFO - Add data frame as file chunks to data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:50,409 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:25:50,410 - INFO - Successfully upserted file chunk to data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:50,686 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:51,093 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:51,094 - INFO - Successfully triggered execution for data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:51,094 - INFO - Wait for execution of data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:51,371 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:51,746 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:52,339 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:52,621 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:52,910 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c151ff45-6847-4670-b82f-48482f87000e "HTTP/1.1 200 OK"
+2025-11-26 18:25:52,910 - INFO - Successfully deleted data push job with id 'c151ff45-6847-4670-b82f-48482f87000e'
+2025-11-26 18:25:52,910 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:25:52,910 - INFO - Chunk 5 uploaded successfully.
+2025-11-26 18:25:52,910 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:26:02,912 - INFO - Processing chunk 6/10 (500000 to 600000)...
+2025-11-26 18:26:16,643 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:26:16,643 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:26:17,073 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:26:17,074 - INFO - Successfully created data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:17,075 - INFO - Add data frame as file chunks to data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:17,893 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:26:17,893 - INFO - Successfully upserted file chunk to data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:18,167 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:18,561 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:18,567 - INFO - Successfully triggered execution for data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:18,567 - INFO - Wait for execution of data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:18,841 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:19,222 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:19,803 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:20,072 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:20,357 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4039b124-ebfe-40bd-9b01-479238ac6294 "HTTP/1.1 200 OK"
+2025-11-26 18:26:20,357 - INFO - Successfully deleted data push job with id '4039b124-ebfe-40bd-9b01-479238ac6294'
+2025-11-26 18:26:20,357 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:26:20,357 - INFO - Chunk 6 uploaded successfully.
+2025-11-26 18:26:20,357 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:26:30,367 - INFO - Processing chunk 7/10 (600000 to 700000)...
+2025-11-26 18:26:32,529 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:26:32,529 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:26:32,838 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:26:32,839 - INFO - Successfully created data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:32,840 - INFO - Add data frame as file chunks to data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:33,689 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:26:33,690 - INFO - Successfully upserted file chunk to data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:33,957 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:34,346 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:34,361 - INFO - Successfully triggered execution for data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:34,361 - INFO - Wait for execution of data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:34,635 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:35,008 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:35,573 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:35,857 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:36,137 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/5fb90911-a5ad-4d56-be48-ea40247e391a "HTTP/1.1 200 OK"
+2025-11-26 18:26:36,138 - INFO - Successfully deleted data push job with id '5fb90911-a5ad-4d56-be48-ea40247e391a'
+2025-11-26 18:26:36,138 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:26:36,139 - INFO - Chunk 7 uploaded successfully.
+2025-11-26 18:26:36,139 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:26:46,141 - INFO - Processing chunk 8/10 (700000 to 800000)...
+2025-11-26 18:26:55,533 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:26:55,533 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:26:55,850 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:26:55,852 - INFO - Successfully created data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:26:55,853 - INFO - Add data frame as file chunks to data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:26:56,769 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:26:56,770 - INFO - Successfully upserted file chunk to data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:26:57,050 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:26:57,527 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:26:57,528 - INFO - Successfully triggered execution for data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:26:57,528 - INFO - Wait for execution of data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:26:57,800 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:26:58,173 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:26:58,749 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:26:59,921 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:27:02,195 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:27:04,478 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:27:04,751 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:27:05,024 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/25072e0d-608a-43db-9f1f-3cf827c85e99 "HTTP/1.1 200 OK"
+2025-11-26 18:27:05,024 - INFO - Successfully deleted data push job with id '25072e0d-608a-43db-9f1f-3cf827c85e99'
+2025-11-26 18:27:05,024 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:27:05,025 - INFO - Chunk 8 uploaded successfully.
+2025-11-26 18:27:05,025 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:27:15,025 - INFO - Processing chunk 9/10 (800000 to 900000)...
+2025-11-26 18:27:17,073 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:27:17,074 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:27:17,499 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:27:17,502 - INFO - Successfully created data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:17,503 - INFO - Add data frame as file chunks to data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:18,395 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:27:18,395 - INFO - Successfully upserted file chunk to data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:18,701 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:19,085 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:19,085 - INFO - Successfully triggered execution for data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:19,089 - INFO - Wait for execution of data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:19,363 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:19,741 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:20,318 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:20,602 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:20,882 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3de9dd55-86cb-4d9c-aba0-b68f70e26a17 "HTTP/1.1 200 OK"
+2025-11-26 18:27:20,882 - INFO - Successfully deleted data push job with id '3de9dd55-86cb-4d9c-aba0-b68f70e26a17'
+2025-11-26 18:27:20,882 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:27:20,883 - INFO - Chunk 9 uploaded successfully.
+2025-11-26 18:27:20,883 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:27:30,884 - INFO - Processing chunk 10/10 (900000 to 1000000)...
+2025-11-26 18:27:32,921 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:27:32,932 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:27:33,238 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:27:33,240 - INFO - Successfully created data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:33,241 - INFO - Add data frame as file chunks to data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:34,055 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:27:34,055 - INFO - Successfully upserted file chunk to data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:34,331 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:34,725 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:34,726 - INFO - Successfully triggered execution for data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:34,726 - INFO - Wait for execution of data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:35,046 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:35,423 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:35,994 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:36,265 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:36,548 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/56269b2c-c379-4dab-9ac3-724f62fe36df "HTTP/1.1 200 OK"
+2025-11-26 18:27:36,550 - INFO - Successfully deleted data push job with id '56269b2c-c379-4dab-9ac3-724f62fe36df'
+2025-11-26 18:27:36,550 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:27:36,551 - INFO - Chunk 10 uploaded successfully.
+2025-11-26 18:27:36,551 - INFO - SUCCESS | Source: dummy_data.csv | Records: 1000000 | Time: 2025-11-26T18:24:16.932139 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 1000000 (in 10 chunks)
+2025-11-26 18:27:36,571 - INFO - Waiting 10 seconds before next upload...
+2025-11-26 18:27:46,572 - INFO - Processing file: dummy_data1.csv -> Table: dummy_data1
+2025-11-26 18:27:47,417 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 18:27:47,700 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:27:47,700 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-26 18:27:47,700 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy_data1" (
+  "ID" INT, "Name" VARCHAR(2000), "Value" INT, "Date" VARCHAR(2000)
+);
+2025-11-26 18:27:47,983 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:27:47,986 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-26 18:27:48,307 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/565ec60b-bc01-47bf-be83-025d5b4f0ade "HTTP/1.1 204 No Content"
+2025-11-26 18:27:48,307 - INFO - Successfully deleted task with id '565ec60b-bc01-47bf-be83-025d5b4f0ade'
+2025-11-26 18:27:48,586 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:27:48,587 - INFO - Successfully created task of type 'TRANSFORMATION' with id '17a95983-d50c-4640-83fa-ed32776ba6b9'
+2025-11-26 18:27:48,587 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 18:27:48,868 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:27:49,166 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/execute "HTTP/1.1 204 No Content"
+2025-11-26 18:27:49,166 - INFO - Successfully started execution for job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:27:49,167 - INFO - Wait for execution of job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:27:49,441 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:27:49,715 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:27:59,717 - INFO - File has 1000000 records. Splitting into 10 chunks of 100000.
+2025-11-26 18:27:59,719 - INFO - Processing chunk 1/10 (0 to 100000)...
+2025-11-26 18:28:04,299 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:28:04,299 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:28:04,625 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:28:04,625 - INFO - Successfully created data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:04,625 - INFO - Add data frame as file chunks to data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:05,896 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:28:05,897 - INFO - Successfully upserted file chunk to data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:06,175 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:06,593 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:06,593 - INFO - Successfully triggered execution for data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:06,593 - INFO - Wait for execution of data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:06,872 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:07,255 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:07,834 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:08,121 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:08,445 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1201dd6a-8559-45ba-8222-4c9e47b3d27b "HTTP/1.1 200 OK"
+2025-11-26 18:28:08,445 - INFO - Successfully deleted data push job with id '1201dd6a-8559-45ba-8222-4c9e47b3d27b'
+2025-11-26 18:28:08,445 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:28:08,445 - INFO - Chunk 1 uploaded successfully.
+2025-11-26 18:28:08,445 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:28:18,448 - INFO - Processing chunk 2/10 (100000 to 200000)...
+2025-11-26 18:28:20,463 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:28:20,465 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:28:20,808 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:28:20,808 - INFO - Successfully created data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:20,810 - INFO - Add data frame as file chunks to data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:21,771 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:28:21,773 - INFO - Successfully upserted file chunk to data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:22,049 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:22,471 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:22,471 - INFO - Successfully triggered execution for data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:22,471 - INFO - Wait for execution of data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:22,741 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:23,124 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:23,703 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:23,978 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:24,250 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39128332-7cc7-4a95-8810-af65165c09a7 "HTTP/1.1 200 OK"
+2025-11-26 18:28:24,250 - INFO - Successfully deleted data push job with id '39128332-7cc7-4a95-8810-af65165c09a7'
+2025-11-26 18:28:24,250 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:28:24,250 - INFO - Chunk 2 uploaded successfully.
+2025-11-26 18:28:24,250 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:28:34,253 - INFO - Processing chunk 3/10 (200000 to 300000)...
+2025-11-26 18:28:50,046 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:28:50,046 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:28:50,365 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:28:50,367 - INFO - Successfully created data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:50,367 - INFO - Add data frame as file chunks to data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:51,225 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:28:51,226 - INFO - Successfully upserted file chunk to data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:51,498 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:51,884 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:51,886 - INFO - Successfully triggered execution for data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:51,886 - INFO - Wait for execution of data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:52,165 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:52,553 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:53,134 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:53,407 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:53,670 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cd65290b-3b2c-4105-af54-d1611f7c6020 "HTTP/1.1 200 OK"
+2025-11-26 18:28:53,670 - INFO - Successfully deleted data push job with id 'cd65290b-3b2c-4105-af54-d1611f7c6020'
+2025-11-26 18:28:53,670 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:28:53,680 - INFO - Chunk 3 uploaded successfully.
+2025-11-26 18:28:53,680 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:29:03,681 - INFO - Processing chunk 4/10 (300000 to 400000)...
+2025-11-26 18:29:06,363 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:29:06,364 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:29:06,684 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:29:06,689 - INFO - Successfully created data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:06,691 - INFO - Add data frame as file chunks to data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:07,918 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:29:07,918 - INFO - Successfully upserted file chunk to data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:08,193 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:08,601 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:08,602 - INFO - Successfully triggered execution for data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:08,602 - INFO - Wait for execution of data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:08,869 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:09,245 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:09,818 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:10,085 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:10,359 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/96651f3d-9195-46ce-9baf-188318297462 "HTTP/1.1 200 OK"
+2025-11-26 18:29:10,360 - INFO - Successfully deleted data push job with id '96651f3d-9195-46ce-9baf-188318297462'
+2025-11-26 18:29:10,360 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:29:10,360 - INFO - Chunk 4 uploaded successfully.
+2025-11-26 18:29:10,360 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:29:20,361 - INFO - Processing chunk 5/10 (400000 to 500000)...
+2025-11-26 18:29:22,291 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:29:22,301 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:29:22,504 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:29:22,504 - INFO - Successfully created data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:22,504 - INFO - Add data frame as file chunks to data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:23,084 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:29:23,086 - INFO - Successfully upserted file chunk to data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:23,262 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:23,557 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:23,557 - INFO - Successfully triggered execution for data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:23,557 - INFO - Wait for execution of data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:23,721 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:23,991 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:24,458 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:24,626 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:24,792 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c82af8e1-f80b-4f50-b8f4-59131d4fcb9f "HTTP/1.1 200 OK"
+2025-11-26 18:29:24,793 - INFO - Successfully deleted data push job with id 'c82af8e1-f80b-4f50-b8f4-59131d4fcb9f'
+2025-11-26 18:29:24,793 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:29:24,793 - INFO - Chunk 5 uploaded successfully.
+2025-11-26 18:29:24,794 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:29:34,794 - INFO - Processing chunk 6/10 (500000 to 600000)...
+2025-11-26 18:29:36,572 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:29:36,573 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:29:36,802 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:29:36,803 - INFO - Successfully created data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:36,803 - INFO - Add data frame as file chunks to data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:37,482 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:29:37,485 - INFO - Successfully upserted file chunk to data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:37,667 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:37,949 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:37,949 - INFO - Successfully triggered execution for data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:37,949 - INFO - Wait for execution of data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:38,124 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:38,389 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:38,864 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:39,038 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:39,202 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/95cd9f29-9788-484c-9e78-18f4df717e7a "HTTP/1.1 200 OK"
+2025-11-26 18:29:39,202 - INFO - Successfully deleted data push job with id '95cd9f29-9788-484c-9e78-18f4df717e7a'
+2025-11-26 18:29:39,203 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:29:39,203 - INFO - Chunk 6 uploaded successfully.
+2025-11-26 18:29:39,203 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:29:49,204 - INFO - Processing chunk 7/10 (600000 to 700000)...
+2025-11-26 18:29:51,218 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:29:51,220 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:29:51,422 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:29:51,423 - INFO - Successfully created data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:51,424 - INFO - Add data frame as file chunks to data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:53,603 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:29:53,604 - INFO - Successfully upserted file chunk to data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:53,773 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:54,121 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:54,121 - INFO - Successfully triggered execution for data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:54,121 - INFO - Wait for execution of data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:54,312 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:54,591 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:55,054 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:55,220 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:55,388 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/3288984c-d7c2-40a5-ba13-4f6b49caa7d1 "HTTP/1.1 200 OK"
+2025-11-26 18:29:55,389 - INFO - Successfully deleted data push job with id '3288984c-d7c2-40a5-ba13-4f6b49caa7d1'
+2025-11-26 18:29:55,389 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:29:55,389 - INFO - Chunk 7 uploaded successfully.
+2025-11-26 18:29:55,389 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:30:05,391 - INFO - Processing chunk 8/10 (700000 to 800000)...
+2025-11-26 18:30:07,937 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:30:07,940 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:30:08,155 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:30:08,156 - INFO - Successfully created data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:08,156 - INFO - Add data frame as file chunks to data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:08,665 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:30:08,667 - INFO - Successfully upserted file chunk to data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:08,849 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:09,191 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:09,192 - INFO - Successfully triggered execution for data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:09,192 - INFO - Wait for execution of data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:09,372 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:09,646 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:10,117 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:11,228 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:13,400 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:15,570 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:17,757 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:17,923 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:18,098 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d2d1f17e-2009-41c8-a06e-ec3ea2427a48 "HTTP/1.1 200 OK"
+2025-11-26 18:30:18,099 - INFO - Successfully deleted data push job with id 'd2d1f17e-2009-41c8-a06e-ec3ea2427a48'
+2025-11-26 18:30:18,099 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:30:18,099 - INFO - Chunk 8 uploaded successfully.
+2025-11-26 18:30:18,099 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:30:28,114 - INFO - Processing chunk 9/10 (800000 to 900000)...
+2025-11-26 18:30:30,148 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:30:30,151 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:30:30,363 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:30:30,364 - INFO - Successfully created data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:30,364 - INFO - Add data frame as file chunks to data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:31,013 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:30:31,014 - INFO - Successfully upserted file chunk to data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:31,179 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:31,654 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:31,655 - INFO - Successfully triggered execution for data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:31,656 - INFO - Wait for execution of data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:31,821 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:32,091 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:32,561 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:32,730 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:32,892 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a0c00143-59f8-46b3-9803-2e6920715444 "HTTP/1.1 200 OK"
+2025-11-26 18:30:32,893 - INFO - Successfully deleted data push job with id 'a0c00143-59f8-46b3-9803-2e6920715444'
+2025-11-26 18:30:32,893 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:30:32,893 - INFO - Chunk 9 uploaded successfully.
+2025-11-26 18:30:32,893 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:30:42,894 - INFO - Processing chunk 10/10 (900000 to 1000000)...
+2025-11-26 18:30:47,252 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:30:47,254 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:30:47,460 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:30:47,461 - INFO - Successfully created data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:47,461 - INFO - Add data frame as file chunks to data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:47,989 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:30:47,990 - INFO - Successfully upserted file chunk to data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:48,155 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:48,521 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:48,522 - INFO - Successfully triggered execution for data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:48,523 - INFO - Wait for execution of data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:48,705 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:48,989 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:49,466 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:50,538 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:52,707 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:54,888 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:57,057 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:59,243 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:59,430 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:59,591 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/b69a66e9-723b-4c16-a320-7d70c4cd3f1c "HTTP/1.1 200 OK"
+2025-11-26 18:30:59,591 - INFO - Successfully deleted data push job with id 'b69a66e9-723b-4c16-a320-7d70c4cd3f1c'
+2025-11-26 18:30:59,591 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:30:59,591 - INFO - Chunk 10 uploaded successfully.
+2025-11-26 18:30:59,591 - INFO - SUCCESS | Source: dummy_data1.csv | Records: 1000000 | Time: 2025-11-26T18:27:47.041433 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 1000000 (in 10 chunks)
+2025-11-26 18:30:59,606 - INFO - Waiting 10 seconds before next upload...
+2025-11-26 18:31:09,607 - INFO - Processing file: dummy_data_2.csv -> Table: dummy_data_2
+2025-11-26 18:31:09,608 - ERROR - Failed to read file c:\Users\Sneha\Documents\Rohit Pratapwar\Antigravity\Python_datapush\dummy_data_2.csv: [Errno 2] No such file or directory: 'c:\\Users\\Sneha\\Documents\\Rohit Pratapwar\\Antigravity\\Python_datapush\\dummy_data_2.csv'
+2025-11-26 18:49:34,525 - INFO - HTTP Request: GET https://pypi.celonis.cloud/pycelonis/ "HTTP/1.1 200 OK"
+2025-11-26 18:49:35,181 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 401 Unauthorized"
+2025-11-26 18:49:35,506 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:49:35,508 - WARNING - KeyType is not set. Defaulted to 'USER_KEY'.
+2025-11-26 18:49:35,667 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:49:35,672 - INFO - Initial connect successful! PyCelonis Version: 2.14.1
+2025-11-26 18:49:35,863 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud/permissions "HTTP/1.1 200 OK"
+2025-11-26 18:49:35,867 - INFO - `team` permissions: ['MANAGE_AUDIT_LOGS', 'MANAGE_SSO_SETTINGS', 'USE_AUDIT_LOGS_API', 'MANAGE_ADOPTION_VIEWS', 'MANAGE_GENERAL_SETTINGS', 'MANAGE_GROUPS', 'MANAGE_APPLICATIONS', 'MANAGE_ON_PREM_CLIENTS', 'USE_STUDIO_ADOPTION_API', 'MANAGE_LOGIN_HISTORY', 'MANAGE_LICENSE_SETTINGS', 'USE_LOGIN_HISTORY_API', 'USE_USER_GROUP_INFO_API', 'MANAGE_MEMBERS', 'MANAGE_UPLINK_INTEGRATIONS', 'MANAGE_PERMISSIONS', 'MANAGE_ADMIN_NOTIFICATIONS', 'IMPORT_MEMBERS']
+2025-11-26 18:49:35,868 - INFO - `storage-manager` permissions: ['DELETE', 'CREATE', 'GET', 'ADMIN', 'LIST']
+2025-11-26 18:49:35,868 - INFO - `compute-live` permissions: []
+2025-11-26 18:49:35,868 - INFO - `task-mining` permissions: ['EDIT_CLIENT_SETTINGS', 'EDIT_PROJECT_CONNECTION', 'EDIT_USERS', 'CREATE_PROJECT', 'EDIT_DATA_CONFIGURATION']
+2025-11-26 18:49:35,869 - INFO - `action-engine` permissions: ['CREATE_PROJECTS', 'MANAGE_SKILLS', 'ACCESS_ALL_PROJECTS', 'MY_INBOX']
+2025-11-26 18:49:35,869 - INFO - `transformation-hub` permissions: ['ACCESS_TRANSFORMATION_HUB']
+2025-11-26 18:49:35,869 - INFO - `workflows` permissions: ['EDIT_AGENTS', 'VIEW_AGENTS', 'REGISTER_AGENTS', 'MANAGE_PERMISSIONS']
+2025-11-26 18:49:35,871 - INFO - `ml-workbench` permissions: ['DELETE_SCHEDULERS', 'EDIT_SCHEDULERS', 'USE_ALL_SCHEDULERS', 'CREATE_APPS', 'USE_ALL_APPS', 'CREATE_SCHEDULERS', 'MANAGE_ALL_APPS', 'CREATE_WORKSPACES', 'MANAGE_ALL_WORKSPACES', 'MANAGE_SCHEDULERS_PERMISSIONS', 'VIEW_CONFIGURATION']
+2025-11-26 18:49:35,871 - INFO - `process-repository` permissions: ['CREATE_AND_MODIFY_CATEGORIES', 'USE_CATEGORIES', 'DELETE_EXISTING_CATEGORIES', 'MODIFY_EXISTING_CATEGORIES']
+2025-11-26 18:49:35,871 - INFO - `package-manager` permissions: ['EXPORT_ALL', 'ENABLE_AI_ML_ASSETS', 'EDIT_ALL_SPACES', 'MANAGE_PERMISSIONS', 'CREATE_SPACE', 'DELETE_ALL_SPACES']
+2025-11-26 18:49:35,872 - INFO - `transformation-center` permissions: ['MOVE_TO', 'EDIT_OBJECTIVE', 'VIEW_OBJECTIVE', 'CREATE_OBJECTIVE', 'MANAGE_PERMISSIONS', 'CREATE_KPI', 'EXPORT_CONTENT', 'DELETE_OBJECTIVE']
+2025-11-26 18:49:35,872 - INFO - `event-collection` permissions: ['EDIT_ALL_DATA_POOLS_RESTRICTED', 'USE_ALL_DATA_MODELS', 'VIEW_ALL_DATA_POOLS', 'CREATE_DATA_POOL', 'EDIT_ALL_DATA_POOLS']
+2025-11-26 18:49:35,872 - INFO - `user-provisioning` permissions: ['SCIM']
+2025-11-26 18:49:36,028 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/team "HTTP/1.1 200 OK"
+2025-11-26 18:49:36,029 - INFO - Processing file: dummy_data.csv -> Table: dummy_data
+2025-11-26 18:49:36,693 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 18:49:36,881 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:49:36,881 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-26 18:49:36,881 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy_data" (
+  "ID" INT, "Name" VARCHAR(2000), "Value" INT, "Date" VARCHAR(2000)
+);
+2025-11-26 18:49:37,055 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:49:37,055 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-26 18:49:37,256 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/17a95983-d50c-4640-83fa-ed32776ba6b9 "HTTP/1.1 204 No Content"
+2025-11-26 18:49:37,257 - INFO - Successfully deleted task with id '17a95983-d50c-4640-83fa-ed32776ba6b9'
+2025-11-26 18:49:37,474 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:49:37,475 - INFO - Successfully created task of type 'TRANSFORMATION' with id 'a5e49817-1053-479f-af77-989a485adf55'
+2025-11-26 18:49:37,475 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 18:49:37,638 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:49:37,827 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/be003019-e6ff-4de4-b6a1-4c119cedccc2/execute "HTTP/1.1 204 No Content"
+2025-11-26 18:49:37,828 - INFO - Successfully started execution for job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:49:37,829 - INFO - Wait for execution of job with id 'be003019-e6ff-4de4-b6a1-4c119cedccc2'
+2025-11-26 18:49:37,996 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:49:38,282 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:49:38,461 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:49:48,464 - INFO - File has 1000000 records. Splitting into 10 chunks of 100000.
+2025-11-26 18:49:48,464 - INFO - Processing chunk 1/10 (0 to 100000)...
+2025-11-26 18:50:07,555 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:50:07,557 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:50:07,780 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:50:07,782 - INFO - Successfully created data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:07,783 - INFO - Add data frame as file chunks to data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:09,503 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:50:09,504 - INFO - Successfully upserted file chunk to data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:09,684 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:09,995 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:09,996 - INFO - Successfully triggered execution for data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:09,996 - INFO - Wait for execution of data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:10,169 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:10,458 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:10,924 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:12,017 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:12,185 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:12,357 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ce54bb65-e4c1-47fa-9343-2c35061d65c3 "HTTP/1.1 200 OK"
+2025-11-26 18:50:12,358 - INFO - Successfully deleted data push job with id 'ce54bb65-e4c1-47fa-9343-2c35061d65c3'
+2025-11-26 18:50:12,358 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:50:12,359 - INFO - Chunk 1 uploaded successfully.
+2025-11-26 18:50:12,359 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:50:22,361 - INFO - Processing chunk 2/10 (100000 to 200000)...
+2025-11-26 18:50:41,406 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:50:41,409 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:50:41,716 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:50:41,719 - INFO - Successfully created data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:41,720 - INFO - Add data frame as file chunks to data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:42,805 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:50:42,806 - INFO - Successfully upserted file chunk to data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:42,983 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:43,350 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:43,351 - INFO - Successfully triggered execution for data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:43,352 - INFO - Wait for execution of data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:43,527 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:43,797 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:44,272 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:45,336 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:45,506 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:45,683 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2c534fbe-bd8e-4c39-806b-ca6f19c8eb05 "HTTP/1.1 200 OK"
+2025-11-26 18:50:45,684 - INFO - Successfully deleted data push job with id '2c534fbe-bd8e-4c39-806b-ca6f19c8eb05'
+2025-11-26 18:50:45,684 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:50:45,684 - INFO - Chunk 2 uploaded successfully.
+2025-11-26 18:50:45,685 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:50:55,688 - INFO - Processing chunk 3/10 (200000 to 300000)...
+2025-11-26 18:51:42,311 - INFO - HTTP Request: GET https://pypi.celonis.cloud/pycelonis/ "HTTP/1.1 200 OK"
+2025-11-26 18:51:42,736 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 401 Unauthorized"
+2025-11-26 18:51:43,017 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:51:43,020 - WARNING - KeyType is not set. Defaulted to 'USER_KEY'.
+2025-11-26 18:51:43,175 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-26 18:51:43,180 - INFO - Initial connect successful! PyCelonis Version: 2.14.1
+2025-11-26 18:51:43,362 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud/permissions "HTTP/1.1 200 OK"
+2025-11-26 18:51:43,364 - INFO - `team` permissions: ['MANAGE_AUDIT_LOGS', 'MANAGE_SSO_SETTINGS', 'USE_AUDIT_LOGS_API', 'MANAGE_ADOPTION_VIEWS', 'MANAGE_GENERAL_SETTINGS', 'MANAGE_GROUPS', 'MANAGE_APPLICATIONS', 'MANAGE_ON_PREM_CLIENTS', 'USE_STUDIO_ADOPTION_API', 'MANAGE_LOGIN_HISTORY', 'MANAGE_LICENSE_SETTINGS', 'USE_LOGIN_HISTORY_API', 'USE_USER_GROUP_INFO_API', 'MANAGE_MEMBERS', 'MANAGE_UPLINK_INTEGRATIONS', 'MANAGE_PERMISSIONS', 'MANAGE_ADMIN_NOTIFICATIONS', 'IMPORT_MEMBERS']
+2025-11-26 18:51:43,365 - INFO - `storage-manager` permissions: ['DELETE', 'CREATE', 'GET', 'ADMIN', 'LIST']
+2025-11-26 18:51:43,365 - INFO - `compute-live` permissions: []
+2025-11-26 18:51:43,365 - INFO - `task-mining` permissions: ['EDIT_CLIENT_SETTINGS', 'EDIT_PROJECT_CONNECTION', 'EDIT_USERS', 'CREATE_PROJECT', 'EDIT_DATA_CONFIGURATION']
+2025-11-26 18:51:43,366 - INFO - `action-engine` permissions: ['CREATE_PROJECTS', 'MANAGE_SKILLS', 'ACCESS_ALL_PROJECTS', 'MY_INBOX']
+2025-11-26 18:51:43,366 - INFO - `transformation-hub` permissions: ['ACCESS_TRANSFORMATION_HUB']
+2025-11-26 18:51:43,366 - INFO - `workflows` permissions: ['EDIT_AGENTS', 'VIEW_AGENTS', 'REGISTER_AGENTS', 'MANAGE_PERMISSIONS']
+2025-11-26 18:51:43,366 - INFO - `ml-workbench` permissions: ['DELETE_SCHEDULERS', 'EDIT_SCHEDULERS', 'USE_ALL_SCHEDULERS', 'CREATE_APPS', 'USE_ALL_APPS', 'CREATE_SCHEDULERS', 'MANAGE_ALL_APPS', 'CREATE_WORKSPACES', 'MANAGE_ALL_WORKSPACES', 'MANAGE_SCHEDULERS_PERMISSIONS', 'VIEW_CONFIGURATION']
+2025-11-26 18:51:43,366 - INFO - `process-repository` permissions: ['CREATE_AND_MODIFY_CATEGORIES', 'USE_CATEGORIES', 'DELETE_EXISTING_CATEGORIES', 'MODIFY_EXISTING_CATEGORIES']
+2025-11-26 18:51:43,367 - INFO - `package-manager` permissions: ['EXPORT_ALL', 'ENABLE_AI_ML_ASSETS', 'EDIT_ALL_SPACES', 'MANAGE_PERMISSIONS', 'CREATE_SPACE', 'DELETE_ALL_SPACES']
+2025-11-26 18:51:43,367 - INFO - `transformation-center` permissions: ['MOVE_TO', 'EDIT_OBJECTIVE', 'VIEW_OBJECTIVE', 'CREATE_OBJECTIVE', 'MANAGE_PERMISSIONS', 'CREATE_KPI', 'EXPORT_CONTENT', 'DELETE_OBJECTIVE']
+2025-11-26 18:51:43,368 - INFO - `event-collection` permissions: ['EDIT_ALL_DATA_POOLS_RESTRICTED', 'USE_ALL_DATA_MODELS', 'VIEW_ALL_DATA_POOLS', 'CREATE_DATA_POOL', 'EDIT_ALL_DATA_POOLS']
+2025-11-26 18:51:43,368 - INFO - `user-provisioning` permissions: ['SCIM']
+2025-11-26 18:51:43,523 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/team "HTTP/1.1 200 OK"
+2025-11-26 18:51:43,524 - INFO - Processing file: dummy_data.csv -> Table: dummy_data
+2025-11-26 18:51:44,168 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 18:51:44,346 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:51:44,348 - INFO - Data Job TEST_DATA_JOB not found. Creating...
+2025-11-26 18:51:44,522 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:51:44,524 - INFO - Successfully created job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 18:51:44,525 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy_data" (
+  "ID" INT, "Name" VARCHAR(2000), "Value" INT, "Date" VARCHAR(2000)
+);
+2025-11-26 18:51:44,696 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:51:44,698 - INFO - Transformation TEST_TRANSFORMATION not found. Creating...
+2025-11-26 18:51:44,880 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:51:44,881 - INFO - Successfully created task of type 'TRANSFORMATION' with id '67e6ed2a-92f0-417e-b828-22ba6ff502bb'
+2025-11-26 18:51:44,882 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 18:51:45,044 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:51:45,240 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/execute "HTTP/1.1 204 No Content"
+2025-11-26 18:51:45,241 - INFO - Successfully started execution for job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 18:51:45,241 - INFO - Wait for execution of job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 18:51:45,416 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:51:45,680 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:51:45,844 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:51:55,848 - INFO - File has 1000000 records. Splitting into 10 chunks of 100000.
+2025-11-26 18:51:55,849 - INFO - Processing chunk 1/10 (0 to 100000)...
+2025-11-26 18:52:21,988 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:52:21,992 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:52:22,231 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:52:22,236 - INFO - Successfully created data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:22,236 - INFO - Add data frame as file chunks to data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:24,000 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:52:24,004 - INFO - Successfully upserted file chunk to data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:24,179 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:24,597 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:24,597 - INFO - Successfully triggered execution for data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:24,597 - INFO - Wait for execution of data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:24,769 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:25,038 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:25,508 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:26,590 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:28,762 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:30,948 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:33,136 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:35,332 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:37,506 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:39,676 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:41,852 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:44,123 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:44,301 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:44,472 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/6d99872e-8db3-4e01-9ca9-48be086c00d3 "HTTP/1.1 200 OK"
+2025-11-26 18:52:44,473 - INFO - Successfully deleted data push job with id '6d99872e-8db3-4e01-9ca9-48be086c00d3'
+2025-11-26 18:52:44,474 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:52:44,474 - INFO - Chunk 1 uploaded successfully.
+2025-11-26 18:52:44,474 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:52:54,477 - INFO - Processing chunk 2/10 (100000 to 200000)...
+2025-11-26 18:53:06,603 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:53:06,605 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:53:06,824 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:53:06,826 - INFO - Successfully created data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:06,827 - INFO - Add data frame as file chunks to data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:07,398 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:53:07,400 - INFO - Successfully upserted file chunk to data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:07,577 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:07,950 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:07,951 - INFO - Successfully triggered execution for data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:07,952 - INFO - Wait for execution of data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:08,121 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:08,395 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:08,861 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:09,932 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:12,103 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:14,266 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:16,433 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:16,617 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:16,786 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/20eaa382-85c0-4514-95a0-db1c13d8eb8f "HTTP/1.1 200 OK"
+2025-11-26 18:53:16,788 - INFO - Successfully deleted data push job with id '20eaa382-85c0-4514-95a0-db1c13d8eb8f'
+2025-11-26 18:53:16,788 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:53:16,788 - INFO - Chunk 2 uploaded successfully.
+2025-11-26 18:53:16,788 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:53:26,796 - INFO - Processing chunk 3/10 (200000 to 300000)...
+2025-11-26 18:53:39,954 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:53:39,956 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:53:40,214 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:53:40,218 - INFO - Successfully created data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:40,221 - INFO - Add data frame as file chunks to data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:40,853 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:53:40,853 - INFO - Successfully upserted file chunk to data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:41,027 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:41,346 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:41,347 - INFO - Successfully triggered execution for data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:41,348 - INFO - Wait for execution of data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:41,578 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:41,848 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:42,314 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:43,377 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:45,542 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:47,709 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:49,887 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:52,153 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:52,323 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:52,494 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a968c274-d878-4ded-81f1-4b37a7717a48 "HTTP/1.1 200 OK"
+2025-11-26 18:53:52,495 - INFO - Successfully deleted data push job with id 'a968c274-d878-4ded-81f1-4b37a7717a48'
+2025-11-26 18:53:52,495 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:53:52,495 - INFO - Chunk 3 uploaded successfully.
+2025-11-26 18:53:52,495 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:54:02,499 - INFO - Processing chunk 4/10 (300000 to 400000)...
+2025-11-26 18:54:10,589 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:54:10,592 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:54:10,850 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:54:10,853 - INFO - Successfully created data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:10,854 - INFO - Add data frame as file chunks to data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:12,055 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:54:12,056 - INFO - Successfully upserted file chunk to data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:12,231 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:12,544 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:12,544 - INFO - Successfully triggered execution for data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:12,544 - INFO - Wait for execution of data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:12,712 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:12,986 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:13,457 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:14,525 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:14,688 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:14,862 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/39eea017-f2ca-42d3-826c-9e221a89f8f9 "HTTP/1.1 200 OK"
+2025-11-26 18:54:14,862 - INFO - Successfully deleted data push job with id '39eea017-f2ca-42d3-826c-9e221a89f8f9'
+2025-11-26 18:54:14,862 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:54:14,862 - INFO - Chunk 4 uploaded successfully.
+2025-11-26 18:54:14,863 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:54:24,865 - INFO - Processing chunk 5/10 (400000 to 500000)...
+2025-11-26 18:54:43,772 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:54:43,775 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:54:44,046 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:54:44,047 - INFO - Successfully created data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:44,048 - INFO - Add data frame as file chunks to data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:45,555 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:54:45,556 - INFO - Successfully upserted file chunk to data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:45,726 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:46,189 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:46,190 - INFO - Successfully triggered execution for data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:46,190 - INFO - Wait for execution of data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:46,354 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:46,636 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:47,098 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:48,166 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:48,334 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:48,516 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/73543658-ffa9-4671-987b-19363b6aea43 "HTTP/1.1 200 OK"
+2025-11-26 18:54:48,516 - INFO - Successfully deleted data push job with id '73543658-ffa9-4671-987b-19363b6aea43'
+2025-11-26 18:54:48,517 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:54:48,517 - INFO - Chunk 5 uploaded successfully.
+2025-11-26 18:54:48,517 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:54:58,521 - INFO - Processing chunk 6/10 (500000 to 600000)...
+2025-11-26 18:55:00,754 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:55:00,756 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:55:00,959 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:55:00,959 - INFO - Successfully created data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:00,962 - INFO - Add data frame as file chunks to data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:01,517 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:55:01,518 - INFO - Successfully upserted file chunk to data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:01,702 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:02,061 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:02,063 - INFO - Successfully triggered execution for data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:02,064 - INFO - Wait for execution of data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:02,229 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:02,497 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:02,968 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:03,136 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:03,306 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/44a6c3b1-d6b9-44b1-a801-b672e963f849 "HTTP/1.1 200 OK"
+2025-11-26 18:55:03,307 - INFO - Successfully deleted data push job with id '44a6c3b1-d6b9-44b1-a801-b672e963f849'
+2025-11-26 18:55:03,307 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:55:03,307 - INFO - Chunk 6 uploaded successfully.
+2025-11-26 18:55:03,308 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:55:13,311 - INFO - Processing chunk 7/10 (600000 to 700000)...
+2025-11-26 18:55:22,801 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:55:22,804 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:55:23,013 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:55:23,013 - INFO - Successfully created data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:23,016 - INFO - Add data frame as file chunks to data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:23,533 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:55:23,535 - INFO - Successfully upserted file chunk to data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:23,706 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:23,988 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:23,989 - INFO - Successfully triggered execution for data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:23,989 - INFO - Wait for execution of data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:24,154 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:24,435 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:24,904 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:25,971 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:28,149 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:30,331 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:32,498 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:34,665 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:36,834 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:39,006 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:41,184 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:41,351 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:41,518 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/c936e554-af7e-471c-a6ef-e995ba854a41 "HTTP/1.1 200 OK"
+2025-11-26 18:55:41,520 - INFO - Successfully deleted data push job with id 'c936e554-af7e-471c-a6ef-e995ba854a41'
+2025-11-26 18:55:41,521 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:55:41,521 - INFO - Chunk 7 uploaded successfully.
+2025-11-26 18:55:41,522 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:55:51,525 - INFO - Processing chunk 8/10 (700000 to 800000)...
+2025-11-26 18:56:30,136 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:56:30,137 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:56:30,453 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:56:30,455 - INFO - Successfully created data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:30,456 - INFO - Add data frame as file chunks to data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:31,649 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:56:31,651 - INFO - Successfully upserted file chunk to data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:31,831 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:32,221 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:32,222 - INFO - Successfully triggered execution for data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:32,223 - INFO - Wait for execution of data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:32,388 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:32,656 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:33,130 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:33,294 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:33,468 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/2aa04284-fd36-41f0-a33c-2c786ad98199 "HTTP/1.1 200 OK"
+2025-11-26 18:56:33,468 - INFO - Successfully deleted data push job with id '2aa04284-fd36-41f0-a33c-2c786ad98199'
+2025-11-26 18:56:33,468 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:56:33,474 - INFO - Chunk 8 uploaded successfully.
+2025-11-26 18:56:33,474 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:56:43,477 - INFO - Processing chunk 9/10 (800000 to 900000)...
+2025-11-26 18:57:20,141 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:57:20,142 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:57:20,359 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:57:20,360 - INFO - Successfully created data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:20,361 - INFO - Add data frame as file chunks to data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:20,998 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:57:21,000 - INFO - Successfully upserted file chunk to data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:21,208 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:21,607 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:21,608 - INFO - Successfully triggered execution for data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:21,609 - INFO - Wait for execution of data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:21,820 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:22,116 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:22,588 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:22,751 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:22,924 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/9e41c677-a52f-4396-ad0d-248b38db0af7 "HTTP/1.1 200 OK"
+2025-11-26 18:57:22,925 - INFO - Successfully deleted data push job with id '9e41c677-a52f-4396-ad0d-248b38db0af7'
+2025-11-26 18:57:22,925 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:57:22,927 - INFO - Chunk 9 uploaded successfully.
+2025-11-26 18:57:22,927 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:57:32,930 - INFO - Processing chunk 10/10 (900000 to 1000000)...
+2025-11-26 18:57:35,423 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:57:35,424 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:57:35,650 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:57:35,653 - INFO - Successfully created data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:35,654 - INFO - Add data frame as file chunks to data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:37,157 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:57:37,158 - INFO - Successfully upserted file chunk to data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:37,327 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:37,713 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:37,717 - INFO - Successfully triggered execution for data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:37,717 - INFO - Wait for execution of data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:37,907 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:38,202 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:38,668 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:39,746 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:41,919 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:44,145 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:46,315 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:48,491 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:50,691 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:52,873 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:55,059 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:57,252 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:57,431 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:57,600 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/4e94f5a2-3114-4341-a364-ce4ec66b887a "HTTP/1.1 200 OK"
+2025-11-26 18:57:57,600 - INFO - Successfully deleted data push job with id '4e94f5a2-3114-4341-a364-ce4ec66b887a'
+2025-11-26 18:57:57,600 - INFO - Successfully appended rows to table 'dummy_data' in data pool
+2025-11-26 18:57:57,600 - INFO - Chunk 10 uploaded successfully.
+2025-11-26 18:57:57,600 - INFO - SUCCESS | Source: dummy_data.csv | Records: 1000000 | Time: 2025-11-26T18:51:43.997753 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 1000000 (in 10 chunks)
+2025-11-26 18:57:57,613 - INFO - Waiting 10 seconds before next upload...
+2025-11-26 18:58:07,617 - INFO - Processing file: dummy_data1.csv -> Table: dummy_data1
+2025-11-26 18:58:08,399 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 18:58:08,577 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 18:58:08,578 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-26 18:58:08,579 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy_data1" (
+  "ID" INT, "Name" VARCHAR(2000), "Value" INT, "Date" VARCHAR(2000)
+);
+2025-11-26 18:58:08,744 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:58:08,744 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-26 18:58:08,964 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/67e6ed2a-92f0-417e-b828-22ba6ff502bb "HTTP/1.1 204 No Content"
+2025-11-26 18:58:08,964 - INFO - Successfully deleted task with id '67e6ed2a-92f0-417e-b828-22ba6ff502bb'
+2025-11-26 18:58:09,144 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 18:58:09,146 - INFO - Successfully created task of type 'TRANSFORMATION' with id '9e5b0901-ccf6-448e-8909-312b40a433e7'
+2025-11-26 18:58:09,147 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 18:58:09,335 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:58:09,535 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/execute "HTTP/1.1 204 No Content"
+2025-11-26 18:58:09,536 - INFO - Successfully started execution for job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 18:58:09,537 - INFO - Wait for execution of job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 18:58:09,702 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:58:10,027 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:58:10,194 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 18:58:20,198 - INFO - File has 1000000 records. Splitting into 10 chunks of 100000.
+2025-11-26 18:58:20,199 - INFO - Processing chunk 1/10 (0 to 100000)...
+2025-11-26 18:58:44,391 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:58:44,393 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:58:44,703 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:58:44,707 - INFO - Successfully created data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:58:44,707 - INFO - Add data frame as file chunks to data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:58:45,816 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:58:45,816 - INFO - Successfully upserted file chunk to data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:58:46,001 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:46,396 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:46,397 - INFO - Successfully triggered execution for data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:58:46,398 - INFO - Wait for execution of data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:58:46,565 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:46,834 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:47,337 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:48,405 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:50,576 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:52,765 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:54,964 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:57,158 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:58:59,330 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:59:01,540 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:59:03,722 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:59:03,892 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:59:04,075 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/809cee7d-9a65-4a5a-8ef5-a19672704cf7 "HTTP/1.1 200 OK"
+2025-11-26 18:59:04,076 - INFO - Successfully deleted data push job with id '809cee7d-9a65-4a5a-8ef5-a19672704cf7'
+2025-11-26 18:59:04,076 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:59:04,076 - INFO - Chunk 1 uploaded successfully.
+2025-11-26 18:59:04,076 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:59:14,079 - INFO - Processing chunk 2/10 (100000 to 200000)...
+2025-11-26 18:59:27,590 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:59:27,591 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:59:27,814 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:59:27,814 - INFO - Successfully created data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:27,816 - INFO - Add data frame as file chunks to data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:28,481 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:59:28,483 - INFO - Successfully upserted file chunk to data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:28,656 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:29,013 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:29,015 - INFO - Successfully triggered execution for data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:29,015 - INFO - Wait for execution of data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:29,193 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:29,464 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:29,937 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:31,008 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:31,184 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:31,348 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/49554dd9-2dcf-459b-a4bb-0ce35b55dd7e "HTTP/1.1 200 OK"
+2025-11-26 18:59:31,349 - INFO - Successfully deleted data push job with id '49554dd9-2dcf-459b-a4bb-0ce35b55dd7e'
+2025-11-26 18:59:31,349 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:59:31,350 - INFO - Chunk 2 uploaded successfully.
+2025-11-26 18:59:31,350 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:59:41,353 - INFO - Processing chunk 3/10 (200000 to 300000)...
+2025-11-26 18:59:43,153 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 18:59:43,153 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 18:59:43,373 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 18:59:43,381 - INFO - Successfully created data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:43,383 - INFO - Add data frame as file chunks to data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:43,943 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 18:59:43,944 - INFO - Successfully upserted file chunk to data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:44,114 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:44,393 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:44,394 - INFO - Successfully triggered execution for data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:44,394 - INFO - Wait for execution of data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:44,556 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:44,823 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:45,286 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:46,357 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:48,520 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:48,690 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:48,869 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/cc2d8687-0d50-4fd6-8321-fbcaca3998ac "HTTP/1.1 200 OK"
+2025-11-26 18:59:48,870 - INFO - Successfully deleted data push job with id 'cc2d8687-0d50-4fd6-8321-fbcaca3998ac'
+2025-11-26 18:59:48,871 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 18:59:48,871 - INFO - Chunk 3 uploaded successfully.
+2025-11-26 18:59:48,871 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 18:59:58,874 - INFO - Processing chunk 4/10 (300000 to 400000)...
+2025-11-26 19:00:25,398 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:00:25,399 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:00:25,642 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:00:25,643 - INFO - Successfully created data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:25,643 - INFO - Add data frame as file chunks to data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:26,280 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:00:26,280 - INFO - Successfully upserted file chunk to data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:26,461 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:26,848 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:26,848 - INFO - Successfully triggered execution for data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:26,851 - INFO - Wait for execution of data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:27,016 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:27,287 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:27,765 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:28,840 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:29,019 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:29,203 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/97e625ed-d164-4ca8-8c2b-ea021c7432c3 "HTTP/1.1 200 OK"
+2025-11-26 19:00:29,204 - INFO - Successfully deleted data push job with id '97e625ed-d164-4ca8-8c2b-ea021c7432c3'
+2025-11-26 19:00:29,205 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:00:29,205 - INFO - Chunk 4 uploaded successfully.
+2025-11-26 19:00:29,205 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:00:39,209 - INFO - Processing chunk 5/10 (400000 to 500000)...
+2025-11-26 19:01:01,485 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:01:01,487 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:01:01,792 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:01:01,795 - INFO - Successfully created data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:01,795 - INFO - Add data frame as file chunks to data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:02,329 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:01:02,331 - INFO - Successfully upserted file chunk to data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:02,502 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:02,876 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:02,876 - INFO - Successfully triggered execution for data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:02,877 - INFO - Wait for execution of data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:03,045 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:03,313 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:03,784 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:03,960 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:04,133 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/72858861-f81e-49c3-b0df-bba48bef12a1 "HTTP/1.1 200 OK"
+2025-11-26 19:01:04,134 - INFO - Successfully deleted data push job with id '72858861-f81e-49c3-b0df-bba48bef12a1'
+2025-11-26 19:01:04,134 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:01:04,134 - INFO - Chunk 5 uploaded successfully.
+2025-11-26 19:01:04,134 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:01:14,138 - INFO - Processing chunk 6/10 (500000 to 600000)...
+2025-11-26 19:01:15,956 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:01:15,958 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:01:16,162 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:01:16,165 - INFO - Successfully created data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:16,166 - INFO - Add data frame as file chunks to data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:16,716 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:01:16,716 - INFO - Successfully upserted file chunk to data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:16,886 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:17,223 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:17,225 - INFO - Successfully triggered execution for data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:17,225 - INFO - Wait for execution of data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:17,384 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:17,650 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:18,115 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:18,283 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:18,451 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d1ba1e99-9b0f-4fd4-a2c4-f48d9115f506 "HTTP/1.1 200 OK"
+2025-11-26 19:01:18,452 - INFO - Successfully deleted data push job with id 'd1ba1e99-9b0f-4fd4-a2c4-f48d9115f506'
+2025-11-26 19:01:18,452 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:01:18,452 - INFO - Chunk 6 uploaded successfully.
+2025-11-26 19:01:18,452 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:01:28,455 - INFO - Processing chunk 7/10 (600000 to 700000)...
+2025-11-26 19:01:30,289 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:01:30,290 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:01:30,506 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:01:30,507 - INFO - Successfully created data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:30,507 - INFO - Add data frame as file chunks to data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:31,048 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:01:31,049 - INFO - Successfully upserted file chunk to data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:31,217 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:31,581 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:31,582 - INFO - Successfully triggered execution for data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:31,582 - INFO - Wait for execution of data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:31,753 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:32,018 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:32,491 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:32,656 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:32,830 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/f1f8bf1f-3419-42c8-91f7-470417bed2c2 "HTTP/1.1 200 OK"
+2025-11-26 19:01:32,830 - INFO - Successfully deleted data push job with id 'f1f8bf1f-3419-42c8-91f7-470417bed2c2'
+2025-11-26 19:01:32,830 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:01:32,830 - INFO - Chunk 7 uploaded successfully.
+2025-11-26 19:01:32,832 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:01:42,834 - INFO - Processing chunk 8/10 (700000 to 800000)...
+2025-11-26 19:01:59,471 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:01:59,472 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:01:59,730 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:01:59,732 - INFO - Successfully created data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:01:59,733 - INFO - Add data frame as file chunks to data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:02:01,223 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:02:01,224 - INFO - Successfully upserted file chunk to data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:02:01,391 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:01,714 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:01,714 - INFO - Successfully triggered execution for data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:02:01,714 - INFO - Wait for execution of data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:02:01,890 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:02,165 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:02,651 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:03,722 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:03,899 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:04,078 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/8be693d4-8347-4557-8b90-0b75de9d3128 "HTTP/1.1 200 OK"
+2025-11-26 19:02:04,078 - INFO - Successfully deleted data push job with id '8be693d4-8347-4557-8b90-0b75de9d3128'
+2025-11-26 19:02:04,082 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:02:04,082 - INFO - Chunk 8 uploaded successfully.
+2025-11-26 19:02:04,083 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:02:14,087 - INFO - Processing chunk 9/10 (800000 to 900000)...
+2025-11-26 19:02:15,966 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:02:15,968 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:02:16,179 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:02:16,182 - INFO - Successfully created data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:16,183 - INFO - Add data frame as file chunks to data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:17,315 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:02:17,316 - INFO - Successfully upserted file chunk to data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:17,492 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:17,779 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:17,786 - INFO - Successfully triggered execution for data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:17,786 - INFO - Wait for execution of data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:17,971 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:18,244 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:18,717 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:18,889 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:19,070 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/254ebc36-fba2-4db0-9d05-3cf8421954ef "HTTP/1.1 200 OK"
+2025-11-26 19:02:19,071 - INFO - Successfully deleted data push job with id '254ebc36-fba2-4db0-9d05-3cf8421954ef'
+2025-11-26 19:02:19,071 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:02:19,072 - INFO - Chunk 9 uploaded successfully.
+2025-11-26 19:02:19,072 - INFO - Waiting 10 seconds before next batch...
+2025-11-26 19:02:29,074 - INFO - Processing chunk 10/10 (900000 to 1000000)...
+2025-11-26 19:02:30,866 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:02:30,870 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-26 19:02:31,090 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:02:31,090 - INFO - Successfully created data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:31,090 - INFO - Add data frame as file chunks to data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:31,638 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:02:31,640 - INFO - Successfully upserted file chunk to data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:31,815 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:32,126 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:32,127 - INFO - Successfully triggered execution for data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:32,127 - INFO - Wait for execution of data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:32,301 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:32,568 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:33,039 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:34,104 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:36,295 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:38,465 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:40,643 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:42,814 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:42,991 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:43,171 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/deaa61a6-9638-462b-9fa2-a4e2aaea6867 "HTTP/1.1 200 OK"
+2025-11-26 19:02:43,172 - INFO - Successfully deleted data push job with id 'deaa61a6-9638-462b-9fa2-a4e2aaea6867'
+2025-11-26 19:02:43,172 - INFO - Successfully appended rows to table 'dummy_data1' in data pool
+2025-11-26 19:02:43,172 - INFO - Chunk 10 uploaded successfully.
+2025-11-26 19:02:43,173 - INFO - SUCCESS | Source: dummy_data1.csv | Records: 1000000 | Time: 2025-11-26T18:58:08.176095 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 1000000 (in 10 chunks)
+2025-11-26 19:02:43,187 - INFO - Waiting 10 seconds before next upload...
+2025-11-26 19:02:53,190 - INFO - Processing file: Rohit.csv -> Table: Rohit
+2025-11-26 19:02:53,462 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-26 19:02:53,623 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-26 19:02:53,625 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-26 19:02:53,626 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "Rohit" (
+  "ID" INT, "First_Name" VARCHAR(2000), "Last_Name" VARCHAR(2000), "Email" VARCHAR(2000), "Gender" VARCHAR(2000), "IP_Address" VARCHAR(2000), "Job_Title" VARCHAR(2000), "Company" VARCHAR(2000), "City" VARCHAR(2000), "Country" VARCHAR(2000)
+);
+2025-11-26 19:02:53,810 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 19:02:53,812 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-26 19:02:53,988 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/9e5b0901-ccf6-448e-8909-312b40a433e7 "HTTP/1.1 204 No Content"
+2025-11-26 19:02:53,990 - INFO - Successfully deleted task with id '9e5b0901-ccf6-448e-8909-312b40a433e7'
+2025-11-26 19:02:54,170 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-26 19:02:54,171 - INFO - Successfully created task of type 'TRANSFORMATION' with id '3a7202e9-9458-4063-9d47-93434db011b5'
+2025-11-26 19:02:54,173 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-26 19:02:54,324 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 19:02:54,537 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/execute "HTTP/1.1 204 No Content"
+2025-11-26 19:02:54,537 - INFO - Successfully started execution for job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 19:02:54,537 - INFO - Wait for execution of job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-26 19:02:54,705 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 19:02:54,981 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 19:02:55,168 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-26 19:03:07,580 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:03:07,581 - INFO - Table Rohit does not exist (append failed). Creating via push...
+2025-11-26 19:03:09,351 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:03:09,355 - WARNING - STRING columns are by default stored as VARCHAR(80) and therefore cut after 80 characters. You can specify a custom field length for each column using the `column_config` parameter.
+2025-11-26 19:03:09,564 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-26 19:03:09,566 - INFO - Successfully created data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:09,566 - INFO - Add data frame as file chunks to data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:09,895 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-26 19:03:09,895 - INFO - Successfully upserted file chunk to data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:10,063 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:10,378 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:10,379 - INFO - Successfully triggered execution for data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:10,379 - INFO - Wait for execution of data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:10,567 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:10,827 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:11,008 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:11,009 - INFO - Successfully created table 'Rohit' in data pool
+2025-11-26 19:03:11,187 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/d99b89f7-7a0d-4afe-844c-c7e9ed7be3e1 "HTTP/1.1 200 OK"
+2025-11-26 19:03:11,188 - INFO - Successfully deleted data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
+2025-11-26 19:03:12,932 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-26 19:03:12,933 - INFO - SUCCESS | Source: Rohit.csv | Records: 5 | Time: 2025-11-26T19:02:53.226415 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 5

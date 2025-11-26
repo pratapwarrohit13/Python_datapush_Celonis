@@ -1,0 +1,2 @@
+Pool attributes: ['from_transport']
+Job attributes: ['_get_task_executions_in_data_job', 'create_task', 'create_transformation', 'from_transport', 'get_task', 'get_tasks', 'get_transformations']
