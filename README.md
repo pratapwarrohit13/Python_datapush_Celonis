@@ -1,6 +1,6 @@
 # 🚀 Celonis Data Push Automation: End-to-End Guide
 
-Welcome! This tool automates the process of uploading your data files (CSV, Excel, Parquet) directly into the Celonis Execution Management System (EMS). It handles all the technical heavy lifting—creating tables, managing data jobs, and ensuring large files are uploaded smoothly.
+Welcome! This tool automates the process of uploading your data files (CSV, Excel, Parquet, JSON, XML) directly into the Celonis Execution Management System (EMS). It handles all the technical heavy lifting—creating tables, managing data jobs, and ensuring large files are uploaded smoothly.
 
 ---
 
@@ -14,6 +14,10 @@ Before you begin, ensure you have the following:
     *   *Profile -> Settings -> Create API Key*
 4.  **Data Pool ID**: The ID of the Data Pool where you want to upload data.
     *   *Data Integration -> Select Pool -> ID is in the URL (e.g., `.../pools/THIS-IS-THE-ID/...`)*
+5.  **Network Access**: Ensure **Port 443** is open.
+    *   > [!IMPORTANT]
+    *   > This script requires a direct connection to Celonis via **Port 443** (HTTPS).
+    *   > If your organization uses a **Proxy** that intercepts SSL traffic, this script **will not work** without additional configuration (not covered here). Please ensure you have direct internet access or a proxy bypass for Celonis domains.
 
 ---
 
@@ -52,6 +56,7 @@ We use a secure configuration file so you don't have to type your password every
     ```
 
     *   **Tip**: For `DATA_SOURCE_PATH`, you can point to a single file (e.g., `C:\Data\sales.csv`) or a whole folder. If you choose a folder, the script will upload **every** supported file inside it!
+    *   **Note**: JSON and XML files will be automatically flattened into a tabular format before upload.
 
 ---
 
