@@ -1172,3 +1172,110 @@
 2025-11-26 19:03:11,188 - INFO - Successfully deleted data push job with id 'd99b89f7-7a0d-4afe-844c-c7e9ed7be3e1'
 2025-11-26 19:03:12,932 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
 2025-11-26 19:03:12,933 - INFO - SUCCESS | Source: Rohit.csv | Records: 5 | Time: 2025-11-26T19:02:53.226415 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 5
+2025-11-27 18:58:19,162 - INFO - HTTP Request: GET https://pypi.celonis.cloud/pycelonis/ "HTTP/1.1 200 OK"
+2025-11-27 18:58:19,832 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 401 Unauthorized"
+2025-11-27 18:58:20,382 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-27 18:58:20,387 - WARNING - KeyType is not set. Defaulted to 'USER_KEY'.
+2025-11-27 18:58:20,639 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud "HTTP/1.1 200 OK"
+2025-11-27 18:58:20,642 - INFO - Initial connect successful! PyCelonis Version: 2.14.1
+2025-11-27 18:58:20,887 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/cloud/permissions "HTTP/1.1 200 OK"
+2025-11-27 18:58:20,887 - INFO - `team` permissions: ['MANAGE_AUDIT_LOGS', 'MANAGE_SSO_SETTINGS', 'USE_AUDIT_LOGS_API', 'MANAGE_ADOPTION_VIEWS', 'MANAGE_GENERAL_SETTINGS', 'MANAGE_GROUPS', 'MANAGE_APPLICATIONS', 'MANAGE_ON_PREM_CLIENTS', 'USE_STUDIO_ADOPTION_API', 'MANAGE_LOGIN_HISTORY', 'MANAGE_LICENSE_SETTINGS', 'USE_LOGIN_HISTORY_API', 'USE_USER_GROUP_INFO_API', 'MANAGE_MEMBERS', 'MANAGE_UPLINK_INTEGRATIONS', 'MANAGE_PERMISSIONS', 'MANAGE_ADMIN_NOTIFICATIONS', 'IMPORT_MEMBERS']
+2025-11-27 18:58:20,887 - INFO - `storage-manager` permissions: ['DELETE', 'CREATE', 'GET', 'ADMIN', 'LIST']
+2025-11-27 18:58:20,887 - INFO - `compute-live` permissions: []
+2025-11-27 18:58:20,887 - INFO - `task-mining` permissions: ['EDIT_CLIENT_SETTINGS', 'EDIT_PROJECT_CONNECTION', 'EDIT_USERS', 'CREATE_PROJECT', 'EDIT_DATA_CONFIGURATION']
+2025-11-27 18:58:20,887 - INFO - `action-engine` permissions: ['CREATE_PROJECTS', 'MANAGE_SKILLS', 'ACCESS_ALL_PROJECTS', 'MY_INBOX']
+2025-11-27 18:58:20,887 - INFO - `transformation-hub` permissions: ['ACCESS_TRANSFORMATION_HUB']
+2025-11-27 18:58:20,887 - INFO - `workflows` permissions: ['EDIT_AGENTS', 'VIEW_AGENTS', 'REGISTER_AGENTS', 'MANAGE_PERMISSIONS']
+2025-11-27 18:58:20,887 - INFO - `ml-workbench` permissions: ['DELETE_SCHEDULERS', 'EDIT_SCHEDULERS', 'USE_ALL_SCHEDULERS', 'CREATE_APPS', 'USE_ALL_APPS', 'CREATE_SCHEDULERS', 'MANAGE_ALL_APPS', 'CREATE_WORKSPACES', 'MANAGE_ALL_WORKSPACES', 'MANAGE_SCHEDULERS_PERMISSIONS', 'VIEW_CONFIGURATION']
+2025-11-27 18:58:20,887 - INFO - `process-repository` permissions: ['CREATE_AND_MODIFY_CATEGORIES', 'USE_CATEGORIES', 'DELETE_EXISTING_CATEGORIES', 'MODIFY_EXISTING_CATEGORIES']
+2025-11-27 18:58:20,887 - INFO - `package-manager` permissions: ['EXPORT_ALL', 'ENABLE_AI_ML_ASSETS', 'EDIT_ALL_SPACES', 'MANAGE_PERMISSIONS', 'CREATE_SPACE', 'DELETE_ALL_SPACES']
+2025-11-27 18:58:20,887 - INFO - `transformation-center` permissions: ['MOVE_TO', 'EDIT_OBJECTIVE', 'VIEW_OBJECTIVE', 'CREATE_OBJECTIVE', 'MANAGE_PERMISSIONS', 'CREATE_KPI', 'EXPORT_CONTENT', 'DELETE_OBJECTIVE']
+2025-11-27 18:58:20,887 - INFO - `event-collection` permissions: ['EDIT_ALL_DATA_POOLS_RESTRICTED', 'USE_ALL_DATA_MODELS', 'VIEW_ALL_DATA_POOLS', 'CREATE_DATA_POOL', 'EDIT_ALL_DATA_POOLS']
+2025-11-27 18:58:20,887 - INFO - `user-provisioning` permissions: ['SCIM']
+2025-11-27 18:58:21,148 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/api/team "HTTP/1.1 200 OK"
+2025-11-27 18:58:21,152 - INFO - Processing file: dummy.json -> Table: dummy
+2025-11-27 18:58:21,355 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-27 18:58:21,558 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-27 18:58:21,562 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-27 18:58:21,562 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy" (
+  "id" INT, "name" VARCHAR(2000), "details.city" VARCHAR(2000), "details.age" INT
+);
+2025-11-27 18:58:21,753 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-27 18:58:21,756 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-27 18:58:21,937 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/3a7202e9-9458-4063-9d47-93434db011b5 "HTTP/1.1 204 No Content"
+2025-11-27 18:58:21,937 - INFO - Successfully deleted task with id '3a7202e9-9458-4063-9d47-93434db011b5'
+2025-11-27 18:58:22,158 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-27 18:58:22,158 - INFO - Successfully created task of type 'TRANSFORMATION' with id '991740db-8c87-4a2e-87db-07cdb000e7ea'
+2025-11-27 18:58:22,158 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-27 18:58:22,378 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 18:58:22,577 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/execute "HTTP/1.1 204 No Content"
+2025-11-27 18:58:22,598 - INFO - Successfully started execution for job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-27 18:58:22,600 - INFO - Wait for execution of job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-27 18:58:22,819 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 18:58:23,198 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 18:58:23,357 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 18:58:55,454 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-27 18:58:55,456 - INFO - Table dummy does not exist (append failed). Creating via push...
+2025-11-27 18:59:43,581 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-27 18:59:43,581 - WARNING - STRING columns are by default stored as VARCHAR(80) and therefore cut after 80 characters. You can specify a custom field length for each column using the `column_config` parameter.
+2025-11-27 18:59:43,991 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-27 18:59:43,991 - INFO - Successfully created data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:43,994 - INFO - Add data frame as file chunks to data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:44,912 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-27 18:59:44,915 - INFO - Successfully upserted file chunk to data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:45,112 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:45,528 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:45,529 - INFO - Successfully triggered execution for data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:45,529 - INFO - Wait for execution of data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:45,696 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:46,039 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:46,549 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:46,753 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:46,753 - INFO - Successfully created table 'dummy' in data pool
+2025-11-27 18:59:46,958 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c "HTTP/1.1 200 OK"
+2025-11-27 18:59:46,958 - INFO - Successfully deleted data push job with id '90e96c2f-5ff2-4ff5-96cd-8db98dc9d01c'
+2025-11-27 18:59:48,700 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-27 18:59:48,702 - INFO - SUCCESS | Source: dummy.json | Records: 2 | Time: 2025-11-27T18:58:21.156031 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 2
+2025-11-27 18:59:48,703 - INFO - Waiting 10 seconds before next upload...
+2025-11-27 18:59:58,704 - INFO - Processing file: dummy.xml -> Table: dummy
+2025-11-27 18:59:59,145 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72 "HTTP/1.1 200 OK"
+2025-11-27 18:59:59,334 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs "HTTP/1.1 200 OK"
+2025-11-27 18:59:59,335 - INFO - Found existing Data Job: TEST_DATA_JOB
+2025-11-27 18:59:59,336 - INFO - Generated SQL: CREATE TABLE IF NOT EXISTS "dummy" (
+  "id" INT, "name" VARCHAR(2000), "city" VARCHAR(2000)
+);
+2025-11-27 18:59:59,510 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-27 18:59:59,512 - INFO - Found existing Transformation: TEST_TRANSFORMATION. Recreating with new SQL...
+2025-11-27 18:59:59,686 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/991740db-8c87-4a2e-87db-07cdb000e7ea "HTTP/1.1 204 No Content"
+2025-11-27 18:59:59,694 - INFO - Successfully deleted task with id '991740db-8c87-4a2e-87db-07cdb000e7ea'
+2025-11-27 18:59:59,882 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/tasks/ "HTTP/1.1 200 OK"
+2025-11-27 18:59:59,882 - INFO - Successfully created task of type 'TRANSFORMATION' with id '85f827d1-a290-4f2c-b67d-e5d4faf942cb'
+2025-11-27 18:59:59,884 - INFO - Executing Data Job TEST_DATA_JOB to run transformation...
+2025-11-27 19:00:00,053 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 19:00:00,270 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/1910bbfb-abf0-4c67-8bb9-91d83e858184/execute "HTTP/1.1 204 No Content"
+2025-11-27 19:00:00,270 - INFO - Successfully started execution for job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-27 19:00:00,273 - INFO - Wait for execution of job with id '1910bbfb-abf0-4c67-8bb9-91d83e858184'
+2025-11-27 19:00:00,474 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 19:00:00,783 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 19:00:00,983 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/logs/status "HTTP/1.1 200 OK"
+2025-11-27 19:00:12,773 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/integration/api/pools/a018f062-f610-44ac-a3eb-874d746e4a72/tables "HTTP/1.1 200 OK"
+2025-11-27 19:00:12,774 - INFO - Table dummy exists. Appending data...
+2025-11-27 19:00:12,775 - WARNING - No column configuration set. String columns are cropped to 80 characters if not configured
+2025-11-27 19:00:12,982 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/ "HTTP/1.1 200 OK"
+2025-11-27 19:00:12,982 - INFO - Successfully created data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:12,982 - INFO - Add data frame as file chunks to data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:13,408 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8/chunks/upserted "HTTP/1.1 200 OK"
+2025-11-27 19:00:13,409 - INFO - Successfully upserted file chunk to data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:13,576 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:13,870 - INFO - HTTP Request: POST https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:13,870 - INFO - Successfully triggered execution for data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:13,870 - INFO - Wait for execution of data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:14,089 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:14,362 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:14,835 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:15,908 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:16,144 - INFO - HTTP Request: GET https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:16,348 - INFO - HTTP Request: DELETE https://7yfclg2h-2025-11-26.training.celonis.cloud/data-ingestion/api/v1/data-push/a018f062-f610-44ac-a3eb-874d746e4a72/jobs/a5e585c8-40bc-4c9e-a6fe-5e8501515ea8 "HTTP/1.1 200 OK"
+2025-11-27 19:00:16,348 - INFO - Successfully deleted data push job with id 'a5e585c8-40bc-4c9e-a6fe-5e8501515ea8'
+2025-11-27 19:00:16,348 - INFO - Successfully appended rows to table 'dummy' in data pool
+2025-11-27 19:00:16,350 - INFO - SUCCESS | Source: dummy.xml | Records: 2 | Time: 2025-11-27T18:59:58.853466 | Pool ID: a018f062-f610-44ac-a3eb-874d746e4a72 | Inserted: 2

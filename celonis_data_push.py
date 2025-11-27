@@ -4,6 +4,8 @@ import logging
 import argparse
 from datetime import datetime
 import pandas as pd
+import json
+from pandas import json_normalize
 from pycelonis import get_celonis
 from dotenv import load_dotenv
 
@@ -35,6 +37,14 @@ def read_file(file_path):
             return pd.read_parquet(file_path)
         elif ext in ['.xls', '.xlsx']:
             return pd.read_excel(file_path)
+        elif ext == '.json':
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+            # Flatten JSON data
+            return json_normalize(data)
+        elif ext == '.xml':
+            # Read XML and flatten
+            return pd.read_xml(file_path)
         else:
             logger.error(f"Unsupported file format: {ext} for file {file_path}")
             return None
@@ -221,7 +231,7 @@ def main():
         # Get all files
         files = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
         # Filter for supported extensions
-        files = [f for f in files if get_file_extension(f) in ['.csv', '.parquet', '.xls', '.xlsx']]
+        files = [f for f in files if get_file_extension(f) in ['.csv', '.parquet', '.xls', '.xlsx', '.json', '.xml']]
         
         if not files:
             logger.warning("No supported files found in directory.")

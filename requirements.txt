@@ -3,3 +3,4 @@ pandas
 pycelonis>=2.0.0
 openpyxl
 python-dotenv
+lxml
