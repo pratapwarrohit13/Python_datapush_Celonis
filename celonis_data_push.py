@@ -37,11 +37,18 @@ def read_file(file_path):
             return pd.read_parquet(file_path)
         elif ext in ['.xls', '.xlsx']:
             return pd.read_excel(file_path)
-        elif ext == '.json':
-            with open(file_path, 'r') as f:
-                data = json.load(f)
-            # Flatten JSON data
-            return json_normalize(data)
+        elif ext in ['.json', '.jsonl', '.ndjson']:
+            # Try reading as standard JSON first (list of objects)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                return json_normalize(data)
+            except json.JSONDecodeError:
+                # Fallback: Try reading as JSON Lines (one object per line)
+                logger.info(f"Standard JSON parse failed for {file_path}. Trying JSON Lines...")
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = [json.loads(line) for line in f if line.strip()]
+                return json_normalize(data)
         elif ext == '.xml':
             # Read XML and flatten
             return pd.read_xml(file_path)
@@ -231,7 +238,7 @@ def main():
         # Get all files
         files = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
         # Filter for supported extensions
-        files = [f for f in files if get_file_extension(f) in ['.csv', '.parquet', '.xls', '.xlsx', '.json', '.xml']]
+        files = [f for f in files if get_file_extension(f) in ['.csv', '.parquet', '.xls', '.xlsx', '.json', '.jsonl', '.ndjson', '.xml']]
         
         if not files:
             logger.warning("No supported files found in directory.")

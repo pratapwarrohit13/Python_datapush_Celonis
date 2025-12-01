@@ -1,6 +1,6 @@
 # 🚀 Celonis Data Push Automation: End-to-End Guide
 
-Welcome! This tool automates the process of uploading your data files (CSV, Excel, Parquet, JSON, XML) directly into the Celonis Execution Management System (EMS). It handles all the technical heavy lifting—creating tables, managing data jobs, and ensuring large files are uploaded smoothly.
+Welcome! This tool automates the process of uploading your data files (CSV, Excel, Parquet, JSON, JSONL, XML) directly into the Celonis Execution Management System (EMS). It handles all the technical heavy lifting—creating tables, managing data jobs, and ensuring large files are uploaded smoothly.
 
 ---
 
@@ -57,6 +57,22 @@ We use a secure configuration file so you don't have to type your password every
 
     *   **Tip**: For `DATA_SOURCE_PATH`, you can point to a single file (e.g., `C:\Data\sales.csv`) or a whole folder. If you choose a folder, the script will upload **every** supported file inside it!
     *   **Note**: JSON and XML files will be automatically flattened into a tabular format before upload.
+    *   **Note**: Supports standard JSON (list of objects) and JSON Lines (`.jsonl`, `.ndjson`, or `.json` with one object per line).
+
+---
+
+## 📂 Supported File Formats
+
+The script automatically detects and handles the following formats:
+
+*   **CSV** (`.csv`): Standard comma-separated values.
+*   **Excel** (`.xls`, `.xlsx`): Reads the first sheet by default.
+*   **Parquet** (`.parquet`): Efficient columnar storage.
+*   **JSON** (`.json`):
+    *   **Standard**: A list of JSON objects (e.g., `[{"id":1}, {"id":2}]`).
+    *   **JSON Lines**: Newline-delimited JSON objects (e.g., `{"id":1}\n{"id":2}`). The script is smart enough to try this if standard parsing fails!
+*   **JSON Lines** (`.jsonl`, `.ndjson`): Explicitly for newline-delimited JSON.
+*   **XML** (`.xml`): Automatically flattens XML structures into a table.
 
 ---
 
